@@ -1,0 +1,10 @@
+// Setup the build environment
+. /home/build/sources/poky/oe-init-build-env /home/build/vmware
+
+// Run the build
+bitbake core-image-minimal
+
+// Get the results
+cd /home/build/vmware/tmp/deploy/rpm/qemux86_64
+cp core-image-minimal-qemux86-64.wic.vmdk /home/build/local_repos/
+
