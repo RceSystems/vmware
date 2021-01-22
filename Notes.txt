@@ -8,3 +8,20 @@ bitbake core-image-minimal
 cd /home/build/vmware/tmp/deploy/rpm/qemux86_64
 cp core-image-minimal-qemux86-64.wic.vmdk /home/build/local_repos/
 
+// Using it with VMWare
+Use VMWare to create a new virtual machine.
+  Select File > New Virtual Machine.
+  Select Custom (advanced) and click Next.
+  Select I will install the operating system later and click Next.
+  Select Guest operating system to a Linux 64-bit option selection. Click Next.
+
+  Continue with normal configuration until the storage options appear.
+    Select LSI Logic (Recommended) as the I/O controller type and then click Next.Note: 
+    The vmdk image must be used as SATA drive.
+    Select SATA and then click Next
+    Select a disk.
+        Optional: Select Use an existing virtual disk and click Next.
+        Input the vmdk filepath from the Browse window and select the vmdk image. Click Next.
+        Select Keep existing format and click Finish.
+        
+Boot the VM.
