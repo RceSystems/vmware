@@ -8,3 +8,6 @@ bitbake core-image-minimal
 cd /home/build/vmware/tmp/deploy/rpm/qemux86_64
 cp core-image-minimal-qemux86-64.wic.vmdk /home/build/local_repos/
 
+build-appliance-image
+http://www.yoctoproject.org/software-item/build-appliance/
+
