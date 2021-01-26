@@ -5,15 +5,12 @@
 bitbake core-image-minimal
 
 // Get the results
-cd /home/build/vmware/tmp/deploy/rpm/qemux86_64
-cp core-image-minimal-qemux86-64.wic.vmdk /home/build/local_repos/
+cp /home/build/vmware/tmp/deploy/images/qemux86-64/core-image-minimal-qemux86-64.wic.vmdk /home/build/local_repos/
 
 
-
-
+// Maybe this would be a better base
 build-appliance-image
 http://www.yoctoproject.org/software-item/build-appliance/
-
 
 
 
